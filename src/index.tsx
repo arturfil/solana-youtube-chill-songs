@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Typography } from '@mui/material';
+import NavBar from './components/NavBar';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <>
+      <NavBar/>
+      <App />
+    </>
   </React.StrictMode>
 );
 
